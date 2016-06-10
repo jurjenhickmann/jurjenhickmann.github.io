@@ -973,7 +973,7 @@ div.vis-network div.vis-manipulation div.vis-button,
 div.vis-network div.vis-edit-mode div.vis-button {
   float:left;
   font-family: verdana;
-  font-size: 20px;
+  font-size: 18px;
   -moz-border-radius: 15px;
   border-radius: 15px;
   display:inline-block;
