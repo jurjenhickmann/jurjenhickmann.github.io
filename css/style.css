@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  /* background: lightgrey; */
+  background: lightgrey url('../images/achtergrond.jpeg') repeat;
+}
+
+header {
+  background-image: url('../images/header-achtergrond.jpeg');
+  height: 150px;
+}
+
+header h1 {
+  font-size: 300%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  text-align: right;
+}
