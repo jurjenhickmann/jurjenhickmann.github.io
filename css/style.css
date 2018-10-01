@@ -12,6 +12,9 @@ body {
 header {
   background-image: url('../images/header-achtergrond.jpeg');
   height: 70px;
+  width: 80%;
+  position: fixed;
+  z-index: 10;
 }
 
 header h1 {
@@ -19,6 +22,13 @@ header h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
   text-align: right;
+}
+
+nav {
+  position: fixed;
+  width: 80%;
+  top: 70px;
+  z-index: 10;
 }
 
 nav ul {
@@ -29,9 +39,9 @@ nav ul li {
   background: #787878;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 4px;
+  /* padding-top: 4px; */
   /* border: solid 2px white; */
-  display: inline;
+  display: inline-block;
 }
 
 nav ul li a {
@@ -42,6 +52,10 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #E0E0E0;
+}
+
+nav ul li:hover {
+  background-color: #808080;
 }
 
 section {
@@ -56,6 +70,8 @@ section article {
   margin: 5px 10px 5px 10px;
   padding: 10px;
   background: white;
+  float: left;
+  width: 40%;
 }
 
 section article h2 {
@@ -67,10 +83,19 @@ section article p {
 }
 
 footer {
-
+  position: fixed;
+  bottom: 0px;
+  z-index: 0;
 }
 
 .wrapper {
   margin: 0 auto 0 auto;
   width: 80%;
+}
+
+.content{
+  position: absolute;
+  top: 100px;
+  width: 80%;
+  z-index: 5;
 }

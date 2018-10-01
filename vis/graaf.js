@@ -1,21 +1,27 @@
 var greenish = '#7BE141';
 var white = '#FFFFFF';
 var yellow = '#FFFF00';
+var whiteYellow = '#FFFFCC';
 
 var nodes = new vis.DataSet([
-  {id: 'start', label: 'Coderclass omgeving-0', color:white},
+  {id: 'start', label: 'Coderclass omgeving-0', color: white},
   //Level 1
-  {id: 'py0', label: 'Python-0', color:white},
-  {id: 'html0', label: 'HTML-CSS-0', color:white},
-  {id: 'blender0', label: 'Blender-0', color:white},
-  {id: 'blokjes0', label: 'Blokjesprogrammeren-0', color:white},
+  {id: 'py0', label: 'Python-0', color: white},
+  {id: 'html0', label: 'HTML-CSS-0', color: white},
+  {id: 'blender0', label: 'Blender-0', color: white},
+  {id: 'blokjes0', label: 'Blokjesprogrammeren-0', color: white},
 
   //Level 2
   {id: 'py1', label: 'Python-1', color: yellow},
   {id: 'py2', label: 'Python-2', color: yellow},
-  {id: 'jsweb0', label: 'Javascript voor web-0', color:yellow},
-  {id: 'html1', label: 'HTML-CSS-1', color:yellow},
+  {id: 'jsweb0', label: 'Javascript voor web-0', color: yellow},
+  {id: 'html1', label: 'HTML-CSS-1', color: yellow},
+  {id: 'linux0', label: 'Linux-0', color: yellow},
 
+  //Lv1-lvl2 Keuze
+  {id: 'hardware0', label: 'Hardware-0', color: whiteYellow},
+
+  //Level 3
   {id: 'py3', label: 'Python-3'},
 
   {id: 'js1', label: 'Javascript-1'},
@@ -29,9 +35,9 @@ var nodes = new vis.DataSet([
   {id: 'jsgame0', label: 'Javascript for games-0'},
   {id: 'unity0', label: 'Unity-0'},
 
-  {id: 'linux0', label: 'Linux-0'},
+
   {id: 'linux1', label: 'Linux-1'},
-  {id: 'hardware0', label: 'Hardware-0'},
+
 
 
   //{id: 11, label: ''}
@@ -51,8 +57,12 @@ var edges = new vis.DataSet([
   {from: 'py1', to: 'jsweb0', arrows:'to'},
   {from: 'html1', to: 'jsweb0', arrows:'to'},
 
+  // Level 3
 
+  //
+  {from: 'blokjes0', to: 'linux0', arrows:'to'},
   {from: 'py0', to: 'py1', arrows:'to'},
+
   {from: 'py2', to: 'py3', arrows:'to'},
   {from: 'py2', to: 'pygame0', arrows:'to'},
   {from: 'js2', to: 'jsgame0', arrows:'to'},
